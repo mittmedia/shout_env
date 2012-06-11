@@ -1,4 +1,4 @@
-shout-env
+shout_env
 =========
 
 A plugin for WordPress that shouts it out loud if it's in the development environment.
