@@ -34,10 +34,18 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 */
 
-$html = <<<SQL
-  <div id="environment" style="position: fixed; width: 100%; background-color: white; z-index: 999; bottom: 0; text-align: center; opacity: .5">
-    <h3 style="color: red; font-size: 2em;">You are in the development environment!</h3>
-  </div>
+if ( APPLICATION_ENV == 'development' ) {
+  $html = <<<SQL
+    <div id="environment" style="position: fixed; width: 100%; background-color: white; z-index: 999; bottom: 0; text-align: center; opacity: .5">
+      <h3 style="color: red; font-size: 2em;">You are in the development environment!</h3>
+    </div>
 SQL;
+} else if ( APPLICATION_ENV == 'stage' ) {
+  $html = <<<SQL
+    <div id="environment" style="position: fixed; width: 100%; background-color: white; z-index: 999; bottom: 0; text-align: center; opacity: .5">
+      <h3 style="color: blue; font-size: 2em;">You are in the stage environment!</h3>
+    </div>
+SQL;
+}
 
 echo $html;
