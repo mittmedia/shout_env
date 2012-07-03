@@ -80,7 +80,7 @@ SQL;
         }
       </style>
       <div id="environment">
-        <h3 style="color: white; font-size: 1em; margin-top: 170px;">You are in the stage environment!</h3>
+        <h3 style="color: white; font-size: 1em; margin-top: 170px;">Stage</h3>
       </div>
 SQL;
   }
