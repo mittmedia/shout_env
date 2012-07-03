@@ -44,7 +44,7 @@ function shout_env_show_env()
           display: block;
           width: 200px;
           height: 200px;
-          position: absolute;
+          position: fixed;
           top: -100px;
           right: -100px;
           -webkit-transform: rotate(45deg);
@@ -67,7 +67,7 @@ SQL;
           display: block;
           width: 200px;
           height: 200px;
-          position: absolute;
+          position: fixed;
           top: -100px;
           right: -100px;
           -webkit-transform: rotate(45deg);
